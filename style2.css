@@ -1,0 +1,64 @@
+.AbParent{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.Overlay{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.AbBg img{
+    width: 95vw;
+    filter: opacity(40%);
+}
+.aboutData {
+    /* background-image: linear-gradient(#06beb6, #48b1bf); */
+    margin: 2% 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.face {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding: 2% 6%;
+    /* border: 2px solid red; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 100%;
+}
+
+.face1 {
+    height: 100%;
+    transition-duration: 1s;
+    z-index: 2;
+    /* background-image: linear-gradient(#06beb6, #48b1bf); */
+    background-image: linear-gradient(
+        40deg,
+        #e6e5aa 0%,
+        #3277cb 45%,
+        #44a9a7 100%
+      );
+}
+.face1 p{
+    transition-duration: 1s;
+    font-size: 2.9vw;
+}
+.face2 {
+    background-image: linear-gradient(#3dbe06, #7ebf48);
+    z-index: 1;
+}
+
+.aboutData:hover .face1{
+    width: 70%;
+    height: 20%;
+}
+.aboutData:hover .face1 p{
+    /* margin-right: 45%; */
+    margin-top: 4%;
+    font-size: 2vw;
+}
