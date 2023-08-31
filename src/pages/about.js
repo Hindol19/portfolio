@@ -4,7 +4,8 @@ import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+// import profilePic from "../../public/images/profile/developer-pic-3.jpg";
+import profilePic from "../../public/images/profile/pic.png";
 import { motion, useSpring, useInView, useMotionValue } from "framer-motion";
 import Skills from "@/components/Skills";
 
