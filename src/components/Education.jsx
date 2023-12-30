@@ -34,22 +34,22 @@ const Details = ({ type, time, place, info }) => {
 
 const expList = [
   {
-    type: "Bachelor Of Science In Computer Science",
-    time: "2016-2020",
-    place: "Massachusetts Institute Of Technology (MIT)",
-    info: "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.",
+    type: "High School Graduation",
+    time: "2018-2020",
+    place: "Holy Home School, Rishra",
+    info: "Relevant courses included Pure Science, Computer Science, and Business Studies.",
   },
   {
-    type: "Master Of Computer Science",
-    time: "2020-2022",
-    place: "Stanford University",
-    info: "Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding.",
+    type: "Bachelors in Computer Science [Ongoing]",
+    time: "2021-present",
+    place: "Academy of Technology, Adisaptagram",
+    info: "Relevant courses involve Full Stack Developement, Machine Learning, Artificial Intelligence, Software Engineering, etc.",
   },
   {
     type: "Online Coursework",
-    time: "2016-2020",
-    place: "Coursera And EdX",
-    info: "Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering.",
+    time: "2020-present",
+    place: "Coursera And Udemy",
+    info: "Completed coursework in various topics such as Copywriting, Python, Data Science and Analytics",
   },
 ];
 

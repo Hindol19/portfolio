@@ -6,25 +6,30 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import fproject1 from "../../public/images/projects2/admin-panel.png";
+import fproject2 from "../../public/images/projects2/e-commerce.png";
+import project1 from "../../public/images/projects2/dev-pf.png";
+import project2 from "../../public/images/projects2/music-pf.png";
+import project3 from "../../public/images/projects2/pentaneuron.png";
+import project4 from "../../public/images/projects2/your-recipe.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-br-2xl rounded-3xl relative border border-solid  bg-light dark:bg-dark shadow-2xl p-12 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+    <article className="w-full flex items-center justify-between rounded-br-2xl rounded-3xl relative dark:border-2 border-solid border-light bg-light dark:bg-dark shadow-2xl p-12 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark opacity-10 blur-2xl" />
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        className="w-1/2 cursor-pointer overflow-hidden lg:w-full"
       >
         {/* <Image src={img} alt={title} className="w-full h-auto" /> */}
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-auto "
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
@@ -68,14 +73,20 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid  bg-light dark:bg-dark p-6 relative xs:p-4">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl dark:border border-solid border-light bg-light dark:bg-dark p-6 relative xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark opacity-30 blur-2xl md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
@@ -118,64 +129,64 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout classname="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="My Projects"
             classname="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
+                title="INSIGHT DASH"
+                summary="INSIGHT DASH is a powerful Admin Panel crafted for seamless management. With a user-friendly interface, it simplifies complex tasks, offering intuitive controls for data management, analytics, and streamlined administration. From user management to insightful data visualization, it's designed to empower efficient decision-making and control."
+                img={fproject1}
+                link="https://react-admin-panel-beta.vercel.app/dashboard"
+                github="https://github.com/Hindol19/react-admin-panel"
+                type="ReactJS, Material UI, NodeJS, ExpressJS, MongoDB"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
+                title="Developer Portfolio Website"
                 img={project1}
                 link="/"
-                github="/"
-                type="Featured Project"
+                github="https://github.com/Hindol19/portfolio"
+                type="NextJS, Tailwind CSS, Framer Motion"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
+                title="Music Portfolio Website"
+                img={project2}
+                link="https://music-portfolio-eight.vercel.app/"
                 github="/"
-                type="Featured Project"
+                type="HTML, CSS, Javascript"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
+                title="Elevated Electronics"
+                summary="Shop smart at Elevated Electronics—an immersive React frontend paired with a robust Strapi backend. Discover the latest tech effortlessly, backed by secure transactions and personalized experiences."
+                img={fproject2}
+                link="https://ecom-webapp-project-frontend.vercel.app/"
+                github="https://github.com/Hindol19/ecom-webapp-project-frontend"
+                type="ReactJS, Strapi, SCSS"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
+                title="Pentaneuron"
+                img={project3}
+                link="https://www.pentaneuron.com/"
+                github="https://github.com/PentaNeuron/website"
+                type="ReactJS, SCSS, ThreeJS"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
+                title="Your Recipe"
+                img={project4}
+                link="https://your-recipe-hazel.vercel.app/"
+                github="https://github.com/Hindol19/your-recipe"
+                type="ReactJS, SCSS, API Integration"
               />
             </div>
           </div>

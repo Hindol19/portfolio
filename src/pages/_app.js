@@ -12,6 +12,7 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
+
   return (
     <>
       <Head>
