@@ -56,20 +56,20 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium ">
-                Hi, I'm <span className="font-bold">Hindol Banerjee</span>, a
-                Web Developer and UI/UX designer with a passion for creating
+                Hi, Im <span className="font-bold">Hindol Banerjee</span>, a Web
+                Developer and UI/UX designer with a passion for creating
                 elegant, functional, and user-centered digital experiences. With
                 more than 3 years of experience in the field, I am always
-                looking for new and innovative ways to bring my clients' visions
-                to life.
+                looking for new and innovative ways to bring my clients&apos;
+                visions to life.
               </p>
               <p className="my-7 font-medium ">
                 I believe that designs are about more than just making things
-                look pretty - it's about solving problems and creating
+                look pretty - it&apos;s about solving problems and creating
                 intuitive, enjoyable experiences for users.
               </p>
               <p className="font-medium ">
-                Whether I'm working on a simple landing page or a full web
+                Whether I&apos;m working on a simple landing page or a full web
                 application, I bring my commitment to design excellent and
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to

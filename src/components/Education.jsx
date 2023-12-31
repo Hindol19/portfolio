@@ -71,9 +71,10 @@ const Education = () => {
           className="absolute left-9 top-1 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
-          {expList.map((item) => {
+          {expList.map((item, index) => {
             return (
               <Details
+                key={index}
                 type={item.type}
                 time={item.time}
                 place={item.place}

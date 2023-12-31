@@ -97,9 +97,10 @@ const Experience = () => {
           className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
-          {expList.map((item) => {
+          {expList.map((item, index) => {
             return (
               <Details
+                key={index}
                 position={item.position}
                 company={item.company}
                 time={item.time}
