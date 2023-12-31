@@ -77,11 +77,11 @@ const about = () => {
               </p>
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl p-0 xl:col-span-4 md:order-1 md:col-span-8">
+            <div className="col-span-3 relative h-max rounded-2xl p-0 xl:col-span-4 md:order-1 md:col-span-8 flex items-center justify-center">
               <Image
                 src={profilePic}
                 alt="Hindol Banerjee"
-                className="w-[85%] h-auto rounded-2xl"
+                className="w-[85%] h-auto rounded-2xl md:w-[50%]"
                 priority
                 sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
