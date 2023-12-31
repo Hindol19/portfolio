@@ -13,7 +13,6 @@ import project2 from "../../public/images/projects2/music-pf.png";
 import project3 from "../../public/images/projects2/pentaneuron.png";
 import project4 from "../../public/images/projects2/your-recipe.png";
 import TransitionEffect from "@/components/TransitionEffect";
-
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -73,7 +72,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl dark:border border-solid border-light bg-light dark:bg-dark p-6 relative xs:p-4">
+    <motion.article
+      className="w-full flex flex-col items-center justify-center rounded-2xl dark:border border-solid border-light bg-light dark:bg-dark p-6 relative xs:p-4"
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+    >
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark opacity-30 blur-2xl md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
@@ -114,7 +117,7 @@ const Project = ({ type, title, img, link, github }) => {
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
