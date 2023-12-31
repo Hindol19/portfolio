@@ -25,7 +25,7 @@ export default function Home() {
         <Layout classname="pt-0 md:pt-16 sm:pt-8">
           {/* <ParticlesComponent /> */}
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-[50%]">
+            <div className="w-1/2 md:w-[70%]">
               <Image
                 src={ProfilePic}
                 alt="hindol banerjee"
