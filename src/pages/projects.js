@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
 import fproject1 from "../../public/images/projects2/admin-panel.png";
-import fproject2 from "../../public/images/projects2/e-commerce.png";
+import fproject2 from "../../public/images/projects2/Cuisine.png";
 import project1 from "../../public/images/projects2/dev-pf.png";
 import project2 from "../../public/images/projects2/music-pf.png";
 import project3 from "../../public/images/projects2/pentaneuron.png";
@@ -166,12 +166,12 @@ const projects = () => {
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                title="Elevated Electronics"
-                summary="Shop smart at Elevated Electronics—an immersive React frontend paired with a robust Strapi backend. Discover the latest tech effortlessly, backed by secure transactions and personalized experiences."
+                title="Cuisine Cucina"
+                summary=" Elevate your dining experience with exquisite flavors and elegant ambiance. Immerse yourself in a refined atmosphere where each dish is a masterpiece. Perfect for intimate dinners and special occasions, our restaurant invites you to savor the art of fine dining."
                 img={fproject2}
-                link="https://ecom-webapp-project-frontend.vercel.app/"
-                github="https://github.com/Hindol19/ecom-webapp-project-frontend"
-                type="ReactJS, Strapi, SCSS"
+                link="https://restaurant-template-indol.vercel.app/"
+                github="https://github.com/Hindol19/restaurant-template"
+                type="ReactJS, SCSS"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
