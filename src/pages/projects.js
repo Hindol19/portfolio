@@ -8,6 +8,7 @@ import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icons";
 import fproject1 from "../../public/images/projects2/admin-panel.png";
 import fproject2 from "../../public/images/projects2/Cuisine.png";
+import fproject3 from "../../public/images/projects2/Dropwrap.png";
 import project1 from "../../public/images/projects2/dev-pf.png";
 import project2 from "../../public/images/projects2/music-pf.png";
 import project3 from "../../public/images/projects2/pentaneuron.png";
@@ -15,7 +16,15 @@ import project4 from "../../public/images/projects2/your-recipe.png";
 import TransitionEffect from "@/components/TransitionEffect";
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  github,
+  ongoing = false,
+}) => {
   return (
     <article className="w-full flex items-center justify-between rounded-br-2xl rounded-3xl relative dark:border-2 border-solid border-light bg-light dark:bg-dark shadow-2xl p-12 lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark opacity-10 blur-2xl" />
@@ -50,17 +59,20 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
+        {ongoing && <Ongoing />}
         <p className="my-2 font-medium text-dark dark:text-light/75 sm:text-sm">
           {summary}
         </p>
         <div className="mt-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10 ">
-            <GithubIcon className="dark:text-light" />
-          </Link>
+          {github != "false" && (
+            <Link href={github} target="_blank" className="w-10 mr-4">
+              <GithubIcon className="dark:text-light" />
+            </Link>
+          )}
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark  p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
+            className=" rounded-lg bg-dark text-light dark:bg-light dark:text-dark  p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
           >
             Visit Project
           </Link>
@@ -121,6 +133,14 @@ const Project = ({ type, title, img, link, github }) => {
   );
 };
 
+const Ongoing = () => {
+  return (
+    <div className="bg-primary dark:bg-primaryDark dark:text-dark text-light rounded-3xl px-5 py-2">
+      Ongoing
+    </div>
+  );
+};
+
 const projects = () => {
   return (
     <>
@@ -136,6 +156,17 @@ const projects = () => {
             classname="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                title="DROPWRAP [Team Project]"
+                ongoing="true"
+                summary="Dropwrap is an online tool which provides a visual analysis of School Dropout rates in India. "
+                img={fproject3}
+                link="https://drop-wrap.vercel.app"
+                github="false"
+                type="NextJS, ReactJS, TailwindCSS, Python"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 title="INSIGHT DASH"
