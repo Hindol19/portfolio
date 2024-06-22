@@ -6,9 +6,8 @@
 
 &nbsp;
 
-My very own Portfolio Website to showcase my skills, experience and projects, etc.
-
-You can find our documentation on our
-[website](https://codesandbox.io/docs/learn/introduction/overview)
+<h2 align='center'>
+    My very own Portfolio Website to showcase my skills, experience and projects, etc.
+</h2>
 
 ## Thanks
