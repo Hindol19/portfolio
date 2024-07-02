@@ -6,9 +6,16 @@
 
 &nbsp;
 
-<h2 align='center'>
+<p align='left'>
     My very own Portfolio Website to showcase my skills, experience and projects, etc.
-</h2>
-<br/>
+</p>
+<h3 align='left'>Tech Stack Used:</h3>
 
-## Thanks
+<ul>
+  <li>NextJS</li>
+  <li>Framer Motion</li>
+  <li>Tailwind CSS</li>
+  <li>Javascript</li>
+</ul>
+
+<h3 align='left'>Thanks!</h3>
