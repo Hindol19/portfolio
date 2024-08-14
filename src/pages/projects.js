@@ -209,8 +209,8 @@ const projects = () => {
               <Project
                 title="Pentaneuron"
                 img={project3}
-                link="https://www.pentaneuron.com/"
-                github="https://github.com/PentaNeuron/website"
+                link="https://marvik-type-webapp.vercel.app/"
+                github="https://github.com/Hindol19/marvik-type-webapp"
                 type="ReactJS, SCSS, ThreeJS"
               />
             </div>
